@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#173f32"/><stop offset="1" stop-color="#bc8550"/></linearGradient>
+    <linearGradient id="pot" x2=".2" y2="1"><stop stop-color="#d98236"/><stop offset="1" stop-color="#772d18"/></linearGradient>
+    <radialGradient id="plate"><stop stop-color="#f6dfae"/><stop offset=".82" stop-color="#c99b42"/><stop offset="1" stop-color="#69351e"/></radialGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h640v420H0z"/>
+  <circle cx="320" cy="208" r="174" fill="none" stroke="#f3d48b" stroke-opacity=".25" stroke-width="2"/>
+  <circle cx="320" cy="208" r="156" fill="none" stroke="#f3d48b" stroke-opacity=".2" stroke-width="2" stroke-dasharray="3 12"/>
+  <ellipse cx="320" cy="320" rx="207" ry="54" fill="url(#plate)" stroke="#f3d48b" stroke-width="5"/>
+  <ellipse cx="320" cy="310" rx="174" ry="38" fill="#7c381e" stroke="#f5d995" stroke-width="3"/>
+  <path d="M170 294Q196 198 320 177Q444 198 470 294Q320 339 170 294Z" fill="url(#pot)" stroke="#f2c66d" stroke-width="5"/>
+  <path d="M320 177Q263 171 262 138Q270 98 320 54Q370 98 378 138Q377 171 320 177Z" fill="url(#pot)" stroke="#f2c66d" stroke-width="5"/>
+  <path d="M278 139q42 18 84 0M243 250q77 28 154 0" fill="none" stroke="#f9df9a" stroke-width="6"/>
+  <path d="M320 115v32m-20-16h40m-34-11 28 23m0-23-28 23" stroke="#fbe2a5" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="222" cy="267" r="18" fill="#8c9c36"/><circle cx="418" cy="267" r="18" fill="#8c9c36"/>
+  <circle cx="260" cy="285" r="14" fill="#df4930"/><circle cx="380" cy="285" r="14" fill="#df4930"/>
+  <circle cx="320" cy="279" r="16" fill="#f0c64a"/>
+  <path d="M320 35q-18-20 0-35m35 47q-18-20 0-35" fill="none" stroke="#fff0c9" stroke-opacity=".8" stroke-width="5" stroke-linecap="round"/>
+</svg>

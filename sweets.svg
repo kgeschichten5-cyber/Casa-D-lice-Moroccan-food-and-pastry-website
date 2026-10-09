@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#633b2a"/><stop offset="1" stop-color="#bc8550"/></linearGradient>
+    <radialGradient id="plate"><stop stop-color="#fff1d4"/><stop offset=".82" stop-color="#dcae62"/><stop offset="1" stop-color="#67351f"/></radialGradient>
+    <linearGradient id="cookie" x2="0" y2="1"><stop stop-color="#ffe5a0"/><stop offset="1" stop-color="#c57b2f"/></linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h640v420H0z"/>
+  <circle cx="320" cy="204" r="166" fill="none" stroke="#fff0c8" stroke-opacity=".32" stroke-width="2"/>
+  <ellipse cx="320" cy="305" rx="217" ry="64" fill="url(#plate)" stroke="#fff0c8" stroke-width="5"/>
+  <ellipse cx="320" cy="293" rx="179" ry="43" fill="#703d24" stroke="#f5d995" stroke-width="4"/>
+  <g fill="url(#cookie)" stroke="#ffe9b8" stroke-width="4">
+    <circle cx="242" cy="267" r="42"/><circle cx="320" cy="252" r="44"/><circle cx="397" cy="267" r="42"/>
+    <circle cx="280" cy="299" r="37"/><circle cx="360" cy="299" r="37"/>
+  </g>
+  <g fill="#f2c46b">
+    <circle cx="229" cy="256" r="4"/><circle cx="247" cy="246" r="4"/><circle cx="260" cy="267" r="4"/><circle cx="235" cy="281" r="4"/>
+    <circle cx="305" cy="243" r="4"/><circle cx="326" cy="232" r="4"/><circle cx="340" cy="257" r="4"/><circle cx="311" cy="270" r="4"/>
+    <circle cx="382" cy="254" r="4"/><circle cx="402" cy="246" r="4"/><circle cx="414" cy="270" r="4"/><circle cx="390" cy="282" r="4"/>
+  </g>
+  <path d="M307 252q13-21 26 0-13 23-26 0Z" fill="#93602b"/>
+  <path d="M267 299q13-21 26 0-13 23-26 0Zm80 0q13-21 26 0-13 23-26 0Z" fill="#93602b"/>
+  <path d="M320 67v30m-15-15h30m-26-11 22 22m0-22-22 22" stroke="#f5d995" stroke-width="3" opacity=".75"/>
+</svg>

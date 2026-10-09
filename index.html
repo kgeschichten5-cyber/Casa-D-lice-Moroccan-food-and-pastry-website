@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chez Délice Ilham - أطباق مغربية وحلويات وكيكات حسب الطلب">
+    <title>Chez Délice Ilham | </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav">
+            <a class="logo" href="#home" aria-label="Chez Délice Ilham">
+                <img src="images/logo.png" alt="Chez Délice Ilham - أطباق وحلويات مغربية">
+            </a>
+
+            <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة">☰</button>
+
+            <nav id="mainNav">
+                <a href="#home">الرئيسية</a>
+                <a href="#dishes">أطباق مغربية</a>
+                <a href="#sweets">حلويات</a>
+                <a href="#cakes">كيكات</a>
+                <a href="#events">المناسبات</a>
+                <a href="#gallery">الصور</a>
+                <a href="#reviews">تقييمات الزبناء</a>
+                <a href="#orderForm">تواصل معنا</a>
+                <select id="languageSelect" aria-label="اختيار اللغة">
+                    <option value="ar">العربية</option>
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                </select>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-slides" aria-hidden="true">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1>Chez Délice Ilham</h1>
+                <h2>مذاق مغربي أصيل… بحب وذوق</h2>
+                <p>أطباق مغربية شهية، حلويات تقليدية وكيكات للمناسبات، محضرة بعناية وبمذاق منزلي أصيل.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">شوفو لائحة الأطباق</a>
+                    <a href="#orderForm" class="btn btn-light">تواصل معنا</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro section">
+            <div class="container intro-grid">
+                <div>
+                    <span class="section-tag">مرحبا بكم</span>
+                    <h2>الذوق المغربي في كل طبق ❤️</h2>
+                    <p>
+                        فـ <strong>Chez Délice Ilham</strong> كنوجدو ليكم أطباق وحلويات مغربية بمواد مختارة وبطريقة تقليدية، مناسبة للعائلة، الأعراس، أعياد الميلاد وجميع المناسبات.
+                    </p>
+                    <a class="text-link" href="#orderForm">طلبي دابا ←</a>
+                </div>
+                <div class="intro-card">
+                    <div class="pattern"></div>
+                    <img src="images/family-hospitality-photo.png" alt="مائدة مغربية عامرة بأطباق تقليدية">
+                    <span aria-hidden="true">✨</span>
+                    <h3>صنع بحب</h3>
+                    <p>كل طبق كيتوجد بعناية باش يوصل ليكم</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="section menu-section">
+            <div class="container">
+                <div class="section-head">
+                    <span class="section-tag">اختار اللي بغيتي</span>
+                    <h2>لائحة المأكولات والحلويات</h2>
+                    <p>تقدرو تطلبو الكمية والبلاتو حسب المناسبة ديالكم.</p>
+                </div>
+
+                <div class="tabs">
+                    <button class="tab active" data-filter="all">الكل</button>
+                    <button class="tab" data-filter="dish">أطباق</button>
+                    <button class="tab" data-filter="sweet">حلويات</button>
+                    <button class="tab" data-filter="cake">كيكات</button>
+                </div>
+
+                <div class="cards" id="menuCards">
+                    <article class="food-card" data-category="dish">
+                        <div class="food-image image-tajine"><img src="images/tajine-photo.png" alt="طاجين مغربي بالخضر"></div>
+                        <div class="food-body">
+                            <span class="badge">طبق مغربي</span>
+                            <h3>طاجين باللحم والخضر</h3>
+                            <p>طاجين بنكهة مغربية تقليدية، مناسب للعائلة والمناسبات.</p>
+                            <div class="food-footer"><strong>حسب الطلب</strong><button class="order-btn" data-item="طاجين باللحم والخضر">طلب</button></div>
+                        </div>
+                    </article>
+
+                    <article class="food-card" data-category="dish">
+                        <div class="food-image image-couscous"><img src="images/couscous-photo.png" alt="طبق كسكس مغربي بالخضر واللحم"></div>
+                        <div class="food-body">
+                            <span class="badge">الأحد والمناسبات</span>
+                            <h3>كسكس مغربي</h3>
+                            <p>كسكس بالخضر واللحم، محضر بالطريقة المغربية التقليدية.</p>
+                            <div class="food-footer"><strong>حسب الطلب</strong><button class="order-btn" data-item="كسكس مغربي">طلب</button></div>
+                        </div>
+                    </article>
+
+                    <article class="food-card" data-category="dish">
+                        <div class="food-image image-pastilla"><img src="images/pastilla-chicken-photo.png" alt="بسطيلة مغربية بالدجاج واللوز"></div>
+                        <div class="food-body">
+                            <span class="badge">مناسبات</span>
+                            <h3>بسطيلة بالدجاج</h3>
+                            <p>بسطيلة مقرمشة بالدجاج واللوز والتوابل المغربية.</p>
+                            <div class="food-footer"><strong>حسب الحجم</strong><button class="order-btn" data-item="بسطيلة بالدجاج">طلب</button></div>
+                        </div>
+                    </article>
+
+                    <article class="food-card" data-category="sweet">
+                        <div class="food-image image-kaab"><img src="images/kaab-ghazal-photo.png" alt="حلويات مغربية متنوعة من بينها كعب الغزال"></div>
+                        <div class="food-body">
+                            <span class="badge">حلويات مغربية</span>
+                            <h3>كعب الغزال</h3>
+                            <p>حلوى باللوز بنكهة مغربية راقية، مناسبة للضيافة.</p>
+                            <div class="food-footer"><strong>بالكيلو أو البلّاتو</strong><button class="order-btn" data-item="كعب الغزال">طلب</button></div>
+                        </div>
+                    </article>
+
+                    <article class="food-card" data-category="sweet">
+                        <div class="food-image image-chebakia"><img src="images/chebakia-photo.png" alt="الشباكية المغربية بالعسل"></div>
+                        <div class="food-body">
+                            <span class="badge">تقليدية</span>
+                            <h3>الشباكية</h3>
+                            <p>شباكية بالعسل والزنجلان، مثالية لرمضان والمناسبات.</p>
+                            <div class="food-footer"><strong>حسب الكمية</strong><button class="order-btn" data-item="الشباكية">طلب</button></div>
+                        </div>
+                    </article>
+
+                    <article class="food-card" data-category="sweet">
+                        <div class="food-image image-briwat"><img src="images/briwat-photo.png" alt="بريوات مغربية محشوة باللوز ومزينة بالزنجلان"></div>
+                        <div class="food-body">
+                            <span class="badge">حلويات</span>
+                            <h3>بريوات باللوز</h3>
+                            <p>بريوات مقرمشة محشوة باللوز ومعطرة بماء الزهر.</p>
+                            <div class="food-footer"><strong>بالعدد أو البلّاتو</strong><button class="order-btn" data-item="بريوات باللوز">طلب</button></div>
+                        </div>
+                    </article>
+
+                    <article class="food-card" data-category="cake">
+                        <div class="food-image image-cake"><img src="images/birthday-cake-photo.jpg" alt="كيكة بيضاء مزينة بالورود الحمراء للمناسبات"></div>
+                        <div class="food-body">
+                            <span class="badge">حسب الطلب</span>
+                            <h3>كيكة أعياد الميلاد</h3>
+                            <p>كيكات بأشكال ونكهات مختلفة حسب اختياركم.</p>
+                            <div class="food-footer"><strong>السعر حسب الحجم</strong><button class="order-btn" data-item="كيكة أعياد الميلاد">طلب</button></div>
+                        </div>
+                    </article>
+
+                    <article class="food-card" data-category="cake">
+                        <div class="food-image image-wedding"><img src="images/wedding-cake-photo.png" alt="حلويات أنيقة للمناسبات والأعراس"></div>
+                        <div class="food-body">
+                            <span class="badge">أعراس</span>
+                            <h3>كيكة الأعراس والمناسبات</h3>
+                            <p>تصميم خاص وأنيق للأعراس والخطوبة وجميع المناسبات.</p>
+                            <div class="food-footer"><strong>تصميم خاص</strong><button class="order-btn" data-item="كيكة الأعراس والمناسبات">طلب</button></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="dishes" class="feature section">
+            <div class="container feature-grid">
+                <div class="feature-photo tajine-big"><img src="images/moroccan-kitchen-photo.png" alt="تشكيلة أطباق مغربية من الطاجين والكسكس والمقبلات"></div>
+                <div>
+                    <span class="section-tag">المطبخ المغربي</span>
+                    <h2>أطباق كتحكي على المغرب 🇲🇦</h2>
+                    <p>من الطاجين والكسكس حتى البسطيلة والرفيسة، كنحضرو الأطباق بعناية وبلمسة منزلية.</p>
+                    <ul class="check-list">
+                        <li>✓ مكونات مختارة</li>
+                        <li>✓ مذاق مغربي أصيل</li>
+                        <li>✓ كميات حسب الطلب</li>
+                        <li>✓ تجهيز للمناسبات</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="sweets" class="section light-section">
+            <div class="container">
+                <div class="section-head">
+                    <span class="section-tag">حلويات مغربية</span>
+                    <h2>حلاوة من الدار ❤️</h2>
+                    <p>حلويات تقليدية للضيافة، الأعياد، رمضان والمناسبات.</p>
+                </div>
+                <div class="mini-grid">
+                    <a class="mini-card" href="#orderForm"><img class="mini-card-photo" src="images/kaab-ghazal-photo.png" alt="كعب الغزال المغربي على طبق فضي">
+                        <h3>كعب الغزال</h3>
+                        <p>باللوز وماء الزهر.</p>
+                    </a>
+                    <a class="mini-card" href="#orderForm"><img class="mini-card-photo" src="images/chebakia-photo.png" alt="شباكية مغربية بالعسل والزنجلان">
+                        <h3>شباكية</h3>
+                        <p>بالعسل والزنجلان.</p>
+                    </a>
+                    <a class="mini-card" href="#orderForm"><img class="mini-card-photo" src="images/briwat-photo.png" alt="بريوات مغربية مثلثة مزينة بالزنجلان">
+                        <h3>بريوات</h3>
+                        <p>مقرمشة ولذيذة.</p>
+                    </a>
+                    <a class="mini-card" href="#orderForm"><img class="mini-card-photo" src="images/ghriba-fekkas-photo.png" alt="صينية غريبة وفقاص مغربي">
+                        <h3>غريبة وفقاص</h3>
+                        <p>مثالية مع أتاي.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="cakes" class="cake-banner section">
+            <img class="custom-cakes-photo" src="images/custom-cakes-photo.png" alt="تشكيلة تصاميم كيكات حسب الطلب">
+            <div class="container">
+                <span class="section-tag">كيكات حسب الطلب</span>
+                <h2>كيكة على ذوقك 🎂</h2>
+                <p>اختار النكهة، الحجم والتصميم… وحنا نوجدوه ليك.</p>
+                <a href="#orderForm" class="btn btn-primary">طلب كيكة</a>
+            </div>
+        </section>
+
+        <section id="events" class="section">
+            <div class="container">
+                <div class="section-head">
+                    <span class="section-tag">المناسبات</span>
+                    <h2>بلّاتوات وتجهيزات للمناسبات</h2>
+                    <p>للأعراس، الخطوبة، أعياد الميلاد، رمضان، العقيقة والضيافة.</p>
+                </div>
+                <div class="event-grid">
+                    <a class="event-card wedding-event" href="#orderForm"><img src="images/wedding-engagement-photo.png" alt="عروسان يمسكان بأيدي بعضهما في مناسبة الخطوبة">
+                        <h3>الأعراس والخطوبة</h3>
+                        <p>حلويات وبلّاتوات بتنسيق أنيق.</p>
+                    </a>
+                    <a class="event-card wedding-event" href="#orderForm"><img src="images/birthday-event-photo.png" alt="كيكة عيد ميلاد مزينة بتاج ذهبي">
+                        <h3>أعياد الميلاد</h3>
+                        <p>كيكات وحلويات حسب الثيم.</p>
+                    </a>
+                    <a class="event-card wedding-event" href="#orderForm"><img src="images/ramadan-photo.png" alt="فانوس وتمور وأجواء رمضانية">
+                        <h3>رمضان</h3>
+                        <p>شباكية، بريوات وحلويات رمضانية.</p>
+                    </a>
+                    <a class="event-card wedding-event" href="#orderForm"><img src="images/family-hospitality-photo.png" alt="مائدة مغربية عامرة بأطباق تقليدية للعائلة والضيافة">
+                        <h3>العائلة والضيافة</h3>
+                        <p>أطباق مغربية جاهزة لللمة.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section gallery-section">
+            <div class="container">
+                <div class="section-head">
+                    <span class="section-tag">معرض الصور</span>
+                    <h2>من مطبخنا ليكم</h2>
+                </div>
+                <div class="gallery">
+                    <a class="gallery-item g1" href="#orderForm"><img src="images/tajine-gallery-photo.png" alt="طاجين مغربي في طبق فخاري"><small>طاجين مغربي</small></a>
+                    <a class="gallery-item g2" href="#orderForm"><img src="images/couscous-gallery-photo.png" alt="كسكس مغربي بالخضر واللحم"><small>كسكس</small></a>
+                    <a class="gallery-item g3" href="#orderForm"><img src="images/sweets-platter-photo.png" alt="تشكيلة حلويات مغربية متنوعة على طبق للتقديم"><small>حلويات</small></a>
+                    <a class="gallery-item g4" href="#orderForm"><img src="images/cakes-gallery-photo.png" alt="كيكة شوكولاتة مزينة للحفلات"><small>كيكات</small></a>
+                    <a class="gallery-item g5" href="#orderForm"><img src="images/chebakia-photo.png" alt="الشباكية المغربية بالعسل مع غطاء تقليدي"><small>الشباكية</small></a>
+                    <a class="gallery-item g6" href="#orderForm"><img src="images/sweets-gallery-photo.png" alt="بلّاتو حلويات مغربية متنوعة مرتبة للتقديم"><small>بلّاتوات</small></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="section reviews-section">
+            <div class="container">
+                <div class="section-head">
+                    <span class="section-tag">تجاربكم كتهمنا</span>
+                    <h2>تقييمات الزبناء</h2>
+                    <p>التقييمات اللي ترسلوها لينا غادي نراجعوها قبل النشر. كون أول من يشارك رأيه.</p>
+                </div>
+                <p class="review-empty">مازال ما كايناش تقييمات منشورة. شاركنا رأيك باش تكون الأول.</p>
+                <form id="reviewForm" class="review-form">
+                    <h3>شاركنا رأيك</h3>
+                    <label for="reviewName">الاسم (اختياري)</label>
+                    <input type="text" id="reviewName" maxlength="60" placeholder="الاسم اللي بغيتي يبان">
+                    <fieldset class="rating-field">
+                        <legend>التقييم ديالك</legend>
+                        <div class="rating-options" role="radiogroup" aria-label="اختار تقييم من نجمة إلى خمس نجوم">
+                            <label><input type="radio" name="rating" value="5" required><span aria-hidden="true">★</span><span class="sr-only">5 نجوم</span></label>
+                            <label><input type="radio" name="rating" value="4"><span aria-hidden="true">★</span><span class="sr-only">4 نجوم</span></label>
+                            <label><input type="radio" name="rating" value="3"><span aria-hidden="true">★</span><span class="sr-only">3 نجوم</span></label>
+                            <label><input type="radio" name="rating" value="2"><span aria-hidden="true">★</span><span class="sr-only">نجمتان</span></label>
+                            <label><input type="radio" name="rating" value="1"><span aria-hidden="true">★</span><span class="sr-only">نجمة واحدة</span></label>
+                        </div>
+                    </fieldset>
+                    <label for="reviewComment">التعليق ديالك</label>
+                    <textarea id="reviewComment" rows="4" maxlength="1000" placeholder="كتب تجربتك معانا..." required></textarea>
+                    <p class="review-privacy">غادي يتفتح واتساب باش تصيفط التقييم. ما غاديش يتنشر حتى نراجعوه ونأخذو موافقتك.</p>
+                    <button class="btn btn-primary full" type="submit">صيفط التقييم عبر واتساب</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section">
+            <div class="container contact-grid">
+                <div>
+                    <span class="section-tag">تواصل معنا</span>
+                    <h2>بغيتي تطلب؟ تواصل معانا 📞</h2>
+                    <p>عمر الفورمولاير وكتب لينا شنو بغيتي، وغادي نتواصلو معاك لتأكيد الطلب.</p>
+                    <div class="contact-info">
+                        <div><span>📱</span>
+                            <div><strong>الهاتف</strong>
+                                <p><a href="tel:+212620918118" dir="ltr">+212 620 918 118</a></p>
+                            </div>
+                        </div>
+                        <div><span>📍</span>
+                            <div><strong>المكان</strong>
+                                <p><a href="https://www.google.com/maps/search/?api=1&amp;query=Sidi%20Maarouf%2C%20Casablanca%2C%20Morocco" target="_blank" rel="noopener noreferrer">سيدي معروف، الدار البيضاء، المغرب 🇲🇦</a></p>
+                            </div>
+                        </div>
+                        <div><span>🕐</span>
+                            <div><strong>أوقات الطلب</strong>
+                                <p>كل يوم حسب المواعيد</p>
+                            </div>
+                        </div>
+                        <div><span aria-hidden="true">📷</span>
+                            <div><strong>إنستغرام</strong>
+                                <p><a href="https://www.instagram.com/chez_delice_ilham/" target="_blank" rel="noopener noreferrer" dir="ltr">@chez_delice_ilham</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="contact-logo" href="#home" aria-label="Chez Délice Ilham">
+                        <img src="images/logo.png" alt="Chez Délice Ilham - أطباق وحلويات مغربية">
+                    </a>
+                </div>
+
+                <form id="orderForm" class="order-form">
+                    <h3>طلب أو استفسار</h3>
+                    <label>الاسم
+          <input type="text" id="name" placeholder="كتب الاسم ديالك" required>
+        </label>
+                    <label>الهاتف
+          <input type="tel" id="phone" placeholder="رقم الهاتف" required>
+        </label>
+                    <label>شنو بغيتي؟
+          <select id="item">
+            <option value="استفسار عام">استفسار عام</option>
+            <option>طاجين باللحم والخضر</option>
+            <option>كسكس مغربي</option>
+            <option>بسطيلة بالدجاج</option>
+            <option>كعب الغزال</option>
+            <option>الشباكية</option>
+            <option>بريوات باللوز</option>
+            <option>كيكة أعياد الميلاد</option>
+            <option>كيكة الأعراس والمناسبات</option>
+          </select>
+        </label>
+                    <label>الرسالة
+          <textarea id="message" rows="4" placeholder="كتب لينا الكمية، التاريخ وأي تفاصيل أخرى..."></textarea>
+        </label>
+                    <button class="btn btn-primary full" type="submit">إرسال الطلب عبر واتساب</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div>
+                <strong>Chez Délice Ilham</strong>
+                <p>مذاق مغربي أصيل… بحب وذوق 🇲🇦</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">الرئيسية</a>
+                <a href="#menu">الأطباق</a>
+                <a href="#orderForm">تواصل معنا</a>
+                <a href="https://www.instagram.com/chez_delice_ilham/" target="_blank" rel="noopener noreferrer">إنستغرام</a>
+            </div>
+        </div>
+        <div class="copyright">© <span id="year"></span> Chez Délice Ilham — جميع الحقوق محفوظة</div>
+    </footer>
+
+    <div id="toast" class="toast">تم اختيار الطلب ✓</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
